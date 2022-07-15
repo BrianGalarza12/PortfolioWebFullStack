@@ -28,7 +28,7 @@ ul li:hover {
 .efecto-linea::before {
     content: '';
     position: absolute;
-    width: 40%;
+    width: 35%;
     height: 3px;
     background-color: red;
     top: 0.8em;
@@ -46,7 +46,6 @@ ul li:hover {
     position: absolute;
     right: 0;
     top: 25%;
-    cursor: pointer;
     color:#000;
 }
 
@@ -57,4 +56,8 @@ ul li:hover {
 .redes a {
     font-size: 40px;
     color: white !important;
+}
+
+.icono-barra i{
+    font-size: 20px;
 }
