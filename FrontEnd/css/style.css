@@ -1,0 +1,60 @@
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(/assets/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid 5px #ffff;
+}
+
+i {
+    padding: 5px;
+}
+
+ul li {
+    margin: 7px;
+}
+
+ul li:hover {
+    background-color: red;
+}
+
+.efecto-linea::after,
+.efecto-linea::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: red;
+    top: 0.8em;
+}
+
+.efecto-linea::before {
+    left: -40%
+}
+
+.efecto-linea::after {
+    right: -40%
+}
+
+.edit-icon {
+    position: absolute;
+    right: 0;
+    top: 25%;
+    cursor: pointer;
+    color:#000;
+}
+
+.title {
+    left: 25%;
+}
+
+.redes a {
+    font-size: 40px;
+    color: white !important;
+}
