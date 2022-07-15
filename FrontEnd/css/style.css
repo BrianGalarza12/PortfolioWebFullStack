@@ -58,6 +58,13 @@ ul li:hover {
     color: white !important;
 }
 
-.icono-barra i{
+.icono-barra {
     font-size: 20px;
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.iconos{
+    margin-left: auto;
+    font-size: 15px;
 }
