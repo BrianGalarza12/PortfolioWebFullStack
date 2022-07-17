@@ -29,7 +29,7 @@
 <body class="bg-success text-dark bg-opacity-10">
 
     <header class="header">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/ap-logo.png" alt="" class="m-0" width="130" height="40">
@@ -61,8 +61,9 @@
                         <li class="nav-item"><a class="nav-link" href="#contacto"><i
                                     class="fa-solid fa-envelope"></i>Contacto</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#"><i
-                                    class="fa-solid fa-arrow-right-to-bracket"></i>Iniciar sesión</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                                data-bs-target="#modalLogin"><i class="fa-solid fa-arrow-right-to-bracket"></i>Iniciar
+                                sesión</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,8 +84,9 @@
                         <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
                     </span>
                     <br>
-                    <Span class="text-white"><i class="fa-solid fa-pen-to-square"></i>Editar
-                        encabezado
+
+                    <Span class="text-white" data-bs-toggle="modal" data-bs-target="#modalHeader">
+                        <i class="fa-solid fa-pen-to-square"></i>Editar encabezado
                     </Span>
                 </div>
             </div>
@@ -96,7 +98,8 @@
             <div class="row  bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Sobre mí</h2>
-                    <Span class="edit-icon"><i class="fa-solid fa-pen-to-square"></i>
+                    <Span class="edit-icon" data-bs-toggle="modal" data-bs-target="#modalAbout"><i
+                            class="fa-solid fa-pen-to-square"></i>
                     </Span>
                 </div>
                 <div class="col-12">
@@ -111,6 +114,32 @@
                         corrupti iste.
                     </p>
                 </div>
+                <div class="col-12 position-relative mt-5">
+                    <h2 class="efecto-linea display-4 title d-inline position-relative">Experiencia</h2>
+                    <Span class="edit-icon" data-bs-toggle="modal" data-bs-target="#modalExperience">
+                        <i class="bi bi-plus-circle-fill"></i>
+                    </Span>
+                </div>
+                <div class="col-12">
+                    <div class="col-12 col-lg-6">
+                        <div class="card mt-4" style="width: 100%;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title">Desarrollador Web FullStack</h5>
+                                    <span class="">
+                                        <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                            data-bs-target="#modalEliminar"></i>
+                                        <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                            data-bs-target="#modalEditExperience"></i>
+                                    </span>
+                                </div>
+                                <h6 class="card-subtitle mb-2 text-muted">2022-Presente</h6>
+                                <p class="card-text">Desarrollo de diversos proyectos para poner en práctica lo
+                                    aprendido.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -118,20 +147,24 @@
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative ">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Educación</h2>
-                    <Span class="edit-icon"><i class="bi bi-plus-circle-fill"></i>
+                    <Span class="edit-icon" data-bs-toggle="modal" data-bs-target="#modalEducation"><i
+                            class="bi bi-plus-circle-fill"></i>
                     </Span>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="card mt-4" style="width: 100%;">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="card-title">Argentina Programa</h5>
+                                <h4 class="card-title">Desarrollo web FullStack</h4>
                                 <span class="">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditEducation"></i>
                                 </span>
                             </div>
                             <h6 class="card-subtitle mb-2 text-muted">2021-2022</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Argentina Programa</h6>
                             <p class="card-text">Curso de Desarrollo Web FullStacks en las cuales se aprenden diversas
                                 tecnologías, tanto Frontend, tales como html, css, Javascript, Angular y bootstrap, como
                                 Backend, tales como java, Spring, entre otras.</p>
@@ -142,14 +175,17 @@
                     <div class="card mt-4" style="width: 100%;">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="card-title">Tecnicatura Superior en
-                                    Desarrollo Web y Aplicaciones Digitales</h5>
+                                <h6 class="card-title">Tecnicatura Superior en
+                                    Desarrollo Web y Aplicaciones Digitales</h6>
                                 <span class="">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditEducation"></i>
                                 </span>
                             </div>
                             <h6 class="card-subtitle mb-2 text-muted">2022</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Instituto Superior Politécnico Córdoba</h6>
                             <p class="card-text">Incorpora nuevas habilidades a aquellos perfiles que se flexibilizan al
                                 momento del desarrollo de aplicaciones pensadas para ejecutarse en la web. Este perfil
                                 es capaz de asumir tareas de diferente índole, que abarca el desarrollo frontend y el
@@ -169,7 +205,7 @@
                     </Span>
                 </div>
                 <!-- Section frontend -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mt-4">
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex position-relative justify-content-between">
@@ -180,8 +216,10 @@
                                 <i class="fa-brands fa-html5 "></i>
                                 <p>HTML</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -193,8 +231,10 @@
                                 <i class="fa-brands fa-css3-alt"></i>
                                 <p>CSS</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -206,8 +246,10 @@
                                 <i class="fa-brands fa-js"></i>
                                 <p>JavaScript</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -219,8 +261,10 @@
                                 <i class="fa-brands fa-bootstrap"></i>
                                 <p>Bootstrap</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -232,8 +276,10 @@
                                 <i class="fa-brands fa-angular"></i>
                                 <p>Angular</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -244,7 +290,7 @@
                     </div>
                 </div>
                 <!-- Section Backend -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mt-4">
                     <div class="card">
                         <div class="card-body">
                             <div class="position-relative d-flex justify-content-between">
@@ -255,8 +301,10 @@
                                 <i class="fa-solid fa-database"></i>
                                 <p>MySql</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -267,8 +315,10 @@
                                 <i class="fa-brands fa-java"></i>
                                 <p>Java/Spring</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -279,7 +329,7 @@
                     </div>
                 </div>
                 <!-- Section SoftSkill -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mt-4">
                     <div class="card">
                         <div class="card-body">
                             <div class="position-relative d-flex justify-content-between">
@@ -290,8 +340,10 @@
                                 <i class="fa-regular fa-comments"></i>
                                 <p>Comunicativo</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -302,8 +354,10 @@
                                 <i class="fa-regular fa-comments"></i>
                                 <p>Trabajo en equipo</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -314,8 +368,10 @@
                                 <i class="fa-regular fa-comments"></i>
                                 <p>Adaptabilidad</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -326,8 +382,10 @@
                                 <i class="fa-regular fa-comments"></i>
                                 <p>Iniciativa</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -338,8 +396,10 @@
                                 <i class="fa-regular fa-comments"></i>
                                 <p>Pensamiento critico</p>
                                 <span class="iconos">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalSkillEdit"></i>
                                 </span>
                             </div>
                             <div class="progress" style="height: 20px;">
@@ -352,11 +412,12 @@
             </div>
         </section>
 
-        <section id="proyectos">
+        <section class="mt-4" id="proyectos">
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative ">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Proyectos</h2>
-                    <Span class="edit-icon"><i class="bi bi-plus-circle-fill"></i>
+                    <Span class="edit-icon" data-bs-toggle="modal" data-bs-target="#modalProyect"><i
+                            class="bi bi-plus-circle-fill"></i>
                     </Span>
                 </div>
                 <div class="col-12 col-lg-6">
@@ -366,8 +427,10 @@
                             <div class="d-flex justify-content-between">
                                 <h5 class="card-title">Portfolio Argentina Programa</h5>
                                 <span class="">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash-can" data-bs-toggle="modal"
+                                        data-bs-target="#modalEliminar"></i>
+                                    <i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                                        data-bs-target="#modalEditProyect"></i>
                                 </span>
                             </div>
                             <h6 class="card-subtitle mb-2 text-muted">2022</h6>
@@ -395,7 +458,7 @@
                 </div>
 
                 <div class="col-12 d-flex justify-content-center align-content-center">
-                    <div class="card" style="width: 50%;">
+                    <div class="card" style="width: 70%;">
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
@@ -413,9 +476,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="contactComment" class="form-label">* Mensaje:</label>
-                                    <textarea id="contactComment" name="contactComment" cols="30" rows="3"
-                                        class="form-control" style="resize:none;" placeholder="¡Dejame un mensaje!"
-                                        required></textarea>
+                                    <textarea id="contactComment" class="form-control" style="resize:none;"
+                                        placeholder="¡Dejame un mensaje!" required></textarea>
                                 </div>
                                 <p>* Campos requeridos</p>
                                 <button type="submit" class="btn btn-primary">¡Enviar!</button>
@@ -430,10 +492,398 @@
     </main>
 
     <!-- Ventanas modal -->
+    <!-- ventana modal del login -->
+    <div class="modal" id="modalLogin" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Acceso al sistema</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="userForm" class="form-label">Usuario:</label>
+                            <input type="text" class="form-control" id="userForm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passForm" class="form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="passForm">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Acceder</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
+    <!-- ventana modal para editar encabezado -->
+    <div class="modal" id="modalHeader" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar encabezado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="nameForm" class="form-label">Editar nombre:</label>
+                            <input type="text" class="form-control" id="nameForm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Seleccione una nueva imagen:</label>
+                            <input class="form-control form-control" id="formFile" type="file"
+                                accept="image/png, image/jpeg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="titleForm" class="form-label">Editar título:</label>
+                            <input type="text" class="form-control" id="titleForm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subtitleForm" class="form-label">Editar descripción:</label>
+                            <input type="text" class="form-control" id="subtitleForm">
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlgithubForm" class="form-label">Enlace github:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="urlgithubForm" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlLinkedinForm" class="form-label">Enlace Linkedin:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="urlLinkedinForm" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ventana modal para actualizar "sobre_mi" -->
+    <div class="modal" id="modalAbout" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Actualizar información</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="descriptionAbout" class="form-label">Ingrese una descripción:</label>
+                            <textarea class="form-control" id="descriptionAbout"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Acceder</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ventana modal para agregar experiencia laboral -->
+    <div class="modal" id="modalExperience" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar experiencia laboral</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="titleExperience" class="form-label">Título del puesto:</label>
+                            <input type="text" class="form-control" id="titleExperience">
+                        </div>
+                        <div class="mb-3">
+                            <label for="periodeExperience" class="form-label">Período:</label>
+                            <input type="text" class="form-control" id="periodeExperience">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descriptionExperience" class="form-label">Descripción del trabajo
+                                realizado:</label>
+                            <textarea class="form-control" id="descriptionExperience"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para eliminar -->
+    <div class="modal" id="modalEliminar" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Eliminar elemento</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <h5>¿Estas seguro que quieres eliminar?</h5>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para editar experiencia laboral -->
+    <div class="modal" id="modalEditExperience" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar experiencia laboral</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="editTitleExperience" class="form-label">Título del puesto:</label>
+                            <input type="text" class="form-control" id="editTitleExperience">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPeriodeExperience" class="form-label">Período:</label>
+                            <input type="text" class="form-control" id="editPeriodeExperience">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescriptionExperience" class="form-label">Descripción del trabajo
+                                realizado:</label>
+                            <textarea class="form-control" id="editDescriptionExperience"></textarea>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para agregar educacion -->
+    <div class="modal" id="modalEducation" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar educación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="titleEducation" class="form-label">Título obtenido:</label>
+                            <input type="text" class="form-control" id="titleEducation">
+                        </div>
+                        <div class="mb-3">
+                            <label for="periodeEducation" class="form-label">Período:</label>
+                            <input type="text" class="form-control" id="periodeEducation">
+                        </div>
+                        <div class="mb-3">
+                            <label for="titleSchool" class="form-label">Nombre de la institución:</label>
+                            <input type="text" class="form-control" id="titleSchool">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descriptionEducation" class="form-label">Descripción del título
+                                obtenido:</label>
+                            <textarea class="form-control" id="descriptionEducation"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para editar educacion -->
+    <div class="modal" id="modalEditEducation" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar educación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="editTitleEducation" class="form-label">Título obtenido:</label>
+                            <input type="text" class="form-control" id="editTitleEducation">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editPeriodeEducation" class="form-label">Período:</label>
+                            <input type="text" class="form-control" id="editPeriodeEducation">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editTitleSchool" class="form-label">Nombre de la institución:</label>
+                            <input type="text" class="form-control" id="editTitleSchool">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescriptionEducation" class="form-label">Descripción del título
+                                obtenido:</label>
+                            <textarea class="form-control" id="editDescriptionEducation"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Falta ventana modal para agregar habilidades -->
+
+    <!-- ventana modal para editar habilidades -->
+    <div class="modal" id="modalSkillEdit" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content section-info">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar habilidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" method="get">
+                    <div class="modal-body">
+                        <div class="m-3">
+                            <label for="skillTitle" class="form-label">Tecnología:</label>
+                            <input id="skillTitle" type="text" class="form-control">
+                        </div>
+                        <div class="m-3">
+                            <label for="skillText" class="form-label">Texto interno:</label>
+                            <input id="skillText" type="text" class="form-control">
+                        </div>
+                        <div class="m-3">
+                            <label for="skillValue" class="form-label">Porcentaje de manejo (1-100):</label>
+                            <input id="skillValue" type="number" class="form-control" min="1" max="100">
+                        </div>
+                        <div class="m-3">
+                            <label for="skillIcon" class="form-label">Icono de habilidad (Opcional):</label>
+                            <input id="skillIcon" type="file" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-outline-success">Aceptar</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para agregar proyecto -->
+    <div class="modal" id="modalProyect" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="proyectFile" class="form-label">Seleccione una nueva imagen:</label>
+                            <input class="form-control" id="proyectFile" type="file" accept="image/png, image/jpeg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="proyectTitle" class="form-label">Agregar título:</label>
+                            <input type="text" class="form-control" id="proyectTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="proyectDate" class="form-label">Fecha:</label>
+                            <input type="text" class="form-control" id="proyectDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descriptionProyect" class="form-label">Descripción del proyecto:</label>
+                            <textarea class="form-control" id="descriptionProyect"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlDemo" class="form-label">Enlace Live demo:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="urlDemo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlRepo" class="form-label">Enlace Repositorio:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="urlRepo" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ventana modal para editar proyecto -->
+    <div class="modal" id="modalEditProyect" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="editProyectFile" class="form-label">Seleccione una nueva imagen:</label>
+                            <input class="form-control" id="editProyectFile" type="file" accept="image/png, image/jpeg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProyectTitle" class="form-label">Agregar título:</label>
+                            <input type="text" class="form-control" id="editProyectTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProyectDate" class="form-label">Fecha:</label>
+                            <input type="text" class="form-control" id="editProyectDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="editDescriptionProyect" class="form-label">Descripción del proyecto:</label>
+                            <textarea class="form-control" id="editDescriptionProyect"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editUrlDemo" class="form-label">Enlace Live demo:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="editUrlDemo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editUrlRepo" class="form-label">Enlace Repositorio:</label>
+                            <input type="url" placeholder="https://example.com" pattern="https://.*"
+                                class="form-control" id="editUrlRepo" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -6,14 +6,15 @@
 }
 
 .foto-perfil {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     border: solid 5px #ffff;
 }
 
 i {
     padding: 5px;
+    cursor: pointer;
 }
 
 ul li {
