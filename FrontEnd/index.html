@@ -29,7 +29,7 @@
 <body class="bg-success text-dark bg-opacity-10">
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/ap-logo.png" alt="" class="m-0" width="130" height="40">
@@ -94,7 +94,7 @@
     </header>
 
     <main class="container">
-        <section class="mt-4" id="sobre_mi">
+        <div class="mt-4" id="sobre_mi">
             <div class="row  bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Sobre mí</h2>
@@ -141,9 +141,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="mt-4" id="educacion">
+        <div class="mt-4" id="educacion">
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative ">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Educación</h2>
@@ -195,9 +195,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="mt-4" id="habilidades">
+        <div class="mt-4" id="habilidades">
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 mb-4 position-relative">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Habilidades</h2>
@@ -210,7 +210,8 @@
                         <div class="card-body">
                             <div class="d-flex position-relative justify-content-between">
                                 <h3>FrontEnd</h3>
-                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill"></i></Span>
+                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill" data-bs-toggle="modal"
+                                    data-bs-target="#modalSkillPlus"></i></Span>
                             </div>
                             <div class="icono-barra">
                                 <i class="fa-brands fa-html5 "></i>
@@ -295,7 +296,8 @@
                         <div class="card-body">
                             <div class="position-relative d-flex justify-content-between">
                                 <h3>BackEnd</h3>
-                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill"></i></Span>
+                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill" data-bs-toggle="modal"
+                                    data-bs-target="#modalSkillPlus"></i></Span>
                             </div>
                             <div class="icono-barra">
                                 <i class="fa-solid fa-database"></i>
@@ -334,7 +336,8 @@
                         <div class="card-body">
                             <div class="position-relative d-flex justify-content-between">
                                 <h3>SoftSkill</h3>
-                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill"></i></Span>
+                                <Span class="edit-icon"><i class="bi bi-plus-circle-fill" data-bs-toggle="modal"
+                                    data-bs-target="#modalSkillPlus"></i></Span>
                             </div>
                             <div class="icono-barra">
                                 <i class="fa-regular fa-comments"></i>
@@ -410,9 +413,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="mt-4" id="proyectos">
+        <div class="mt-4" id="proyectos">
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative ">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Proyectos</h2>
@@ -443,13 +446,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="contacto">
+        <div id="contacto">
             <div class="row bg-light shadow p-3 mb-5 bg-body rounded p-3">
                 <div class="col-12 position-relative">
                     <h2 class="efecto-linea display-4 title d-inline position-relative">Contacto</h2>
-                    <Span class="edit-icon"><i class="fa-solid fa-pen-to-square"></i>
+                    <Span class="edit-icon"><i class="fa-solid fa-pen-to-square" data-bs-toggle="modal"
+                        data-bs-target="#modalContacto"></i>
                     </Span>
                 </div>
 
@@ -488,8 +492,12 @@
 
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+
+    <footer class="container-fluid">
+        <p>© Todos los derechos reservados. 2022 | Diseñado y Desarrollado por Brian Galarza</p>
+    </footer>
 
     <!-- Ventanas modal -->
     <!-- ventana modal del login -->
@@ -584,7 +592,7 @@
                     </form>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-success">Acceder</button>
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
@@ -755,12 +763,46 @@
         </div>
     </div>
 
-    <!-- Falta ventana modal para agregar habilidades -->
+    <!--Ventana Modal para agregar habilidades.-->
+    <div class="modal fade" id="modalSkillPlus" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content section-info">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar habiliad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <form action="" method="get">
+                <div class="modal-body">
+                    <div class="m-3">
+                        <label for="skillTitle" class="form-label">Habilidad/Tecnología:</label>
+                        <input id="itemTitle" type="text" class="form-control">
+                    </div>
+                    <div class="m-3">
+                        <label for="skillText" class="form-label">Texto interno:</label>
+                        <input id="skillText" type="text" class="form-control">
+                    </div>
+                    <div class="m-3">
+                        <label for="skillValue" class="form-label">Porcentaje de manejo (1-100):</label>
+                        <input id="skillValue" type="number" class="form-control" min="1" max="100">
+                    </div>
+                    <div class="m-3">
+                        <label for="skillIcon" class="form-label">Icono de habilidad (Opcional):</label>
+                        <input id="skillIcon" type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-outline-success">Aceptar</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
 
     <!-- ventana modal para editar habilidades -->
     <div class="modal" id="modalSkillEdit" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content section-info">
+            <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Editar habilidad</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -884,6 +926,31 @@
             </div>
         </div>
     </div>
+
+    <!-- Modificar texto de contacto -->
+    <div class="modal" id="modalContacto" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Actualizar información</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="mb-3">
+                            <label for="descriptionContacto" class="form-label">Ingrese una descripción:</label>
+                            <textarea class="form-control" id="descriptionContacto"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-success">Aceptar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

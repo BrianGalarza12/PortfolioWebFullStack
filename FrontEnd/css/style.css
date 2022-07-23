@@ -69,3 +69,13 @@ ul li:hover {
     margin-left: auto;
     font-size: 15px;
 }
+
+footer{
+    height: 60px;
+    font-size: 15px;
+    background-color: #000;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
